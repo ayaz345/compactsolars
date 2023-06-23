@@ -55,7 +55,9 @@ def main():
       f.write("%s=%s\n" %("CompactSolars.build.mcpversion",mcpversion))
       f.write("%s=%s\n" %("CompactSolars.build.mcversion",mcversion))
 
-    print("Version information: CompactSolars %s.%s.%s using MCP %s for %s" % (major, minor, rev, mcpversion, mcversion))
+    print(
+        f"Version information: CompactSolars {major}.{minor}.{rev} using MCP {mcpversion} for {mcversion}"
+    )
 
 if __name__ == '__main__':
     main()
